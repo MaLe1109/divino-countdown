@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <title>DIVINO | Private Releases</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <main class="container">
+
+        <!-- LOGIN -->
+        <section id="loginPage" class="login-card">
+            <div class="icon">🔒</div>
+
+            <p class="eyebrow">DIVINO • PRIVATE ACCESS</p>
+            <h1>MEMBER<br>ACCESS<span>.</span></h1>
+            <p class="subtitle">PRIVATER ZUGANG ZU KOMMENDEN RELEASES</p>
+
+            <form id="loginForm">
+                <label for="username">BENUTZERNAME</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Benutzername eingeben"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="password">PASSWORT</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Passwort eingeben"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <p id="loginError" class="error" role="alert"></p>
+
+                <button type="submit">ZUGANG ERHALTEN ↗</button>
+            </form>
+
+            <p class="footer-text">PRIVATE RELEASE PORTAL © 2026</p>
+        </section>
+
+        <!-- COUNTDOWN -->
+        <section id="countdownPage" class="release" hidden>
+            <header class="topbar">
+                <span class="brand">DIVINO<span>.</span></span>
+                <button id="logoutButton" class="logout-button" type="button">
+                    ABMELDEN ↗
+                </button>
+            </header>
+
+            <div class="artist-photo">
+                <img src="assets/artist-photo.jpeg" alt="">
+            </div>
+
+            <p class="eyebrow">⏱ THE NEXT CHAPTER</p>
+            <h1>NEW SINGLE<span>.</span></h1>
+            <p class="release-date">30. OKTOBER 2026</p>
+
+            <div class="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <small>TAGE</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <small>STUNDEN</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <small>MINUTEN</small>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <small>SEKUNDEN</small>
+                </div>
+            </div>
+
+            <p id="status" aria-live="polite">DIE ZEIT LÄUFT.</p>
+            <p class="footer-text">THE MUSIC SPEAKS FOR ITSELF.</p>
+        </section>
+
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
